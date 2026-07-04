@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickMart - Fresh Groceries Delivered Fast</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header/Navbar -->
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-left">
+          <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>QuickMart</span>
+          </div>
+        </div>
+
+        <div class="navbar-center">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search groceries, products..." />
+          </div>
+        </div>
+
+        <div class="navbar-right">
+          <div class="user-info">
+            <div class="username-container">
+              <i class="fas fa-user-circle"></i>
+              <span>Account</span>
+            </div>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+          </div>
+          <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Fresh & Fast Delivery</h1>
+        <p>Get quality groceries delivered to your door in minutes</p>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+      <h2>Shop by Category</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">🥬</div>
+          <span>Vegetables</span>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🍎</div>
+          <span>Fruits</span>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🥛</div>
+          <span>Dairy</span>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🍞</div>
+          <span>Bakery</span>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🍛</div>
+          <span>Pantry</span>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🧴</div>
+          <span>Household</span>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🧼</div>
+          <span>Beauty</span>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">☕</div>
+          <span>Beverages</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals-section">
+      <h2>Deals of the Day</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-badge">-30%</span>
+            <img
+              src="https://5.imimg.com/data5/NR/KY/MY-48969557/fresh-tomato.png"
+              alt="Tomatoes"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Fresh Tomatoes</h3>
+            <p class="product-desc">1 kg</p>
+            <div class="product-price">
+              <span class="original-price">₹120</span>
+              <span class="sale-price">₹84</span>
+            </div>
+            <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-badge">-25%</span>
+            <img
+              src="https://fruitfortheoffice.co.uk/media/.renditions/wysiwyg/42e9as7nataai4a6jcufwg.jpeg"
+              alt="Banana"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Golden Bananas</h3>
+            <p class="product-desc">1 dozen</p>
+            <div class="product-price">
+              <span class="original-price">₹100</span>
+              <span class="sale-price">₹75</span>
+            </div>
+            <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-badge">-20%</span>
+            <img
+              src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/ciw/2025/12/17/51a2cd89-2a42-4b2b-ac97-95288e02952d_TYF3262KU8_MN_16122025.png"
+              alt="Milk"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Fresh Milk</h3>
+            <p class="product-desc">1 Litre</p>
+            <div class="product-price">
+              <span class="original-price">₹80</span>
+              <span class="sale-price">₹64</span>
+            </div>
+            <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-badge">-35%</span>
+            <img
+              src="https://www.bbassets.com/media/uploads/p/l/40162924_7-britannia-100-whole-wheat-bread.jpg"
+              alt="Bread"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Whole Wheat Bread</h3>
+            <p class="product-desc">1 loaf</p>
+            <div class="product-price">
+              <span class="original-price">₹100</span>
+              <span class="sale-price">₹65</span>
+            </div>
+            <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-badge">-15%</span>
+            <img
+              src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3dbba1f1-25c0-45bd-9b09-08fb6c2dc226.jpg"
+              alt="Eggs"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Organic Eggs</h3>
+            <p class="product-desc">12 eggs</p>
+            <div class="product-price">
+              <span class="original-price">₹150</span>
+              <span class="sale-price">₹127</span>
+            </div>
+            <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-badge">-40%</span>
+            <img
+              src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/f897d996-1f8e-4f55-8db0-19ef6ee1bd96.png"
+              alt="Oil"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Cooking Oil</h3>
+            <p class="product-desc">1 Litre</p>
+            <div class="product-price">
+              <span class="original-price">₹250</span>
+              <span class="sale-price">₹150</span>
+            </div>
+            <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-badge">-22%</span>
+            <img
+              src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/5144d947-e1cb-4f91-8881-e7cb0e3d97f3.png"
+              alt="Rice"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Basmati Rice</h3>
+            <p class="product-desc">1 kg</p>
+            <div class="product-price">
+              <span class="original-price">₹180</span>
+              <span class="sale-price">₹140</span>
+            </div>
+            <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-badge">-18%</span>
+            <img
+              src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1080/da/cms-assets/cms/product/ef33b15a-3b65-4103-9d7d-0029b1ff1a4a.png"
+              alt="Honey"
+            />
+          </div>
+          <div class="product-info">
+            <h3>Pure Honey</h3>
+            <p class="product-desc">500ml</p>
+            <div class="product-price">
+              <span class="original-price">₹200</span>
+              <span class="sale-price">₹164</span>
+            </div>
+            <button class="add-btn"><i class="fas fa-plus"></i> Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>About QuickMart</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Download App</a></li>
+            <li><a href="#">Store Locator</a></li>
+            <li><a href="#">Bulk Orders</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Report Issue</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 QuickMart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./home.js"></script>
+  </body>
+</html>

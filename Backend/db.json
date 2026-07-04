@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "id": "1769497484630",
+      "fullname": "Shresth Rajput",
+      "email": "rajshresth2@gmail.com",
+      "password": "shresth123",
+      "createdAt": "1/27/2026, 12:34:44 PM"
+    },
+    {
+      "id": "1769582725563",
+      "fullname": "Chombu Singh",
+      "email": "chombu@gmail.com",
+      "password": "chombu123",
+      "createdAt": "1/28/2026, 12:15:25 PM"
+    },
+    {
+      "id": 1783156141724,
+      "fullname": "Rhythm Garg",
+      "email": "rhythmgarg5415@gmail.com",
+      "password": "rhythm@123",
+      "createdAt": "4/7/2026, 2:39:01 pm"
+    }
+  ],
+  "promoCodes": [
+    {
+      "id": "1",
+      "code": "SAVE10",
+      "discount": 10,
+      "type": "percentage",
+      "description": "10% OFF on all items",
+      "minOrder": 0,
+      "expiryDate": "31/12/2026"
+    },
+    {
+      "id": "2",
+      "code": "SAVE20",
+      "discount": 20,
+      "type": "percentage",
+      "description": "20% OFF on all items",
+      "minOrder": 500,
+      "expiryDate": "31/12/2026"
+    },
+    {
+      "id": "3",
+      "code": "WELCOME50",
+      "discount": 50,
+      "type": "fixed",
+      "description": "₹50 OFF on orders above ₹300",
+      "minOrder": 300,
+      "expiryDate": "31/12/2025"
+    },
+    {
+      "id": "4",
+      "code": "SUPER30",
+      "discount": 30,
+      "type": "percentage",
+      "description": "30% OFF for first-time users",
+      "minOrder": 200,
+      "expiryDate": "31/12/2026"
+    },
+    {
+      "id": "5",
+      "code": "NEWYEAR",
+      "discount": 25,
+      "type": "percentage",
+      "description": "25% OFF New Year Special",
+      "minOrder": 0,
+      "expiryDate": "31/12/2026"
+    }
+  ],
+  "carts": [
+    {
+      "userId": "1769582725563",
+      "items": [
+        {
+          "id": 1769669438246,
+          "name": "Fresh Tomatoes",
+          "price": "₹84",
+          "image": "https://5.imimg.com/data5/NR/KY/MY-48969557/fresh-tomato.png",
+          "quantity": 1
+        },
+        {
+          "id": 1769669439103,
+          "name": "Golden Bananas",
+          "price": "₹75",
+          "image": "https://fruitfortheoffice.co.uk/media/.renditions/wysiwyg/42e9as7nataai4a6jcufwg.jpeg",
+          "quantity": 1
+        }
+      ],
+      "updatedAt": "1/29/2026, 12:20:39 PM",
+      "id": "eb59"
+    },
+    {
+      "userId": "1769497484630",
+      "items": [
+        {
+          "id": 1769754826337,
+          "name": "Cooking Oil",
+          "price": "₹150",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/f897d996-1f8e-4f55-8db0-19ef6ee1bd96.png",
+          "quantity": 1
+        },
+        {
+          "id": 1769754827842,
+          "name": "Basmati Rice",
+          "price": "₹140",
+          "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/5144d947-e1cb-4f91-8881-e7cb0e3d97f3.png",
+          "quantity": 1
+        }
+      ],
+      "updatedAt": "1/30/2026, 12:03:47 PM",
+      "id": "c713"
+    }
+  ]
+}

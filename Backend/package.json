@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start":"json-server db.json --watch --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
