@@ -20,6 +20,27 @@
       "email": "rhythmgarg5415@gmail.com",
       "password": "rhythm@123",
       "createdAt": "4/7/2026, 2:39:01 pm"
+    },
+    {
+      "id": 1783185957188,
+      "fullname": "Arun Kumar",
+      "email": "arungarg12feb@gmail.com",
+      "password": "arun@123",
+      "createdAt": "4/7/2026, 10:55:56 pm"
+    },
+    {
+      "id": 1783267728440,
+      "fullname": "Akash Sharma",
+      "email": "sharmaa19609@gmail.com",
+      "password": "betterhalf",
+      "createdAt": "5/7/2026, 9:38:47 pm"
+    },
+    {
+      "id": 1784004638897,
+      "fullname": "Ashutosh Yadav",
+      "email": "a@gmail.com",
+      "password": "666666",
+      "createdAt": "14/7/2026, 10:20:38 am"
     }
   ],
   "promoCodes": [
@@ -111,6 +132,41 @@
       ],
       "updatedAt": "1/30/2026, 12:03:47 PM",
       "id": "c713"
+    },
+    {
+      "userId": 1783156141724,
+      "items": [
+        {
+          "id": 1783156718407,
+          "name": "Golden Bananas",
+          "price": "₹75",
+          "image": "https://fruitfortheoffice.co.uk/media/.renditions/wysiwyg/42e9as7nataai4a6jcufwg.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 1783156719679,
+          "name": "Fresh Milk",
+          "price": "₹64",
+          "image": "https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/ciw/2025/12/17/51a2cd89-2a42-4b2b-ac97-95288e02952d_TYF3262KU8_MN_16122025.png",
+          "quantity": 1
+        }
+      ],
+      "updatedAt": "4/7/2026, 2:48:39 pm",
+      "id": "r1Y_2Q2"
+    },
+    {
+      "userId": 1784004638897,
+      "items": [
+        {
+          "id": 1784004857181,
+          "name": "Whole Wheat Bread",
+          "price": "₹65",
+          "image": "https://www.bbassets.com/media/uploads/p/l/40162924_7-britannia-100-whole-wheat-bread.jpg",
+          "quantity": 1
+        }
+      ],
+      "updatedAt": "14/7/2026, 10:24:19 am",
+      "id": "-iiXI8H"
     }
   ]
 }
