@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "json-server db.json --watch --port $PORT --host 0.0.0.0"
+  "start": "npx json-server db.json --watch --port $PORT --host 0.0.0.0"
   },
   "dependencies": {
     "json-server": "^0.17.4"
