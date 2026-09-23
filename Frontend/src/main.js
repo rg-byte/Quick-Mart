@@ -49,7 +49,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    const response = await fetch("http://localhost:3000/users", {
+    const response = await fetch("${import.meta.env.VITE_API_URL}/users", {
       method: "GET",
     });
     const users = await response.json();
@@ -92,7 +92,7 @@ window.addEventListener("DOMContentLoaded", () => {
       return alert("Password doesn't matched!!");
     }
 
-    const response = await fetch("http://localhost:3000/users", {
+    const response = await fetch("${import.meta.env.VITE_API_URL}/users", {
       method: "GET",
     });
     const users = await response.json();
@@ -104,7 +104,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (user) {
       return alert("User Already Exist!!");
     } else {
-      await fetch("http://localhost:3000/users", {
+      await fetch("${import.meta.env.VITE_API_URL}/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
