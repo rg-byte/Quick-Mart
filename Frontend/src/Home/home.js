@@ -69,7 +69,7 @@ async function saveCartToBackend() {
 
   try {
     // First, delete old cart for this user if exists
-    const cartsResponse = await fetch("${import.meta.env.VITE_API_URL}/carts");
+    const cartsResponse = await fetch(`${import.meta.env.VITE_API_URL}/carts`);
     const carts = await cartsResponse.json();
     const userCart = carts.find((c) => c.userId === user.id);
 
@@ -88,7 +88,7 @@ async function saveCartToBackend() {
       });
     } else {
       // Create new cart
-      await fetch("${import.meta.env.VITE_API_URL}/carts", {
+      await fetch(`${import.meta.env.VITE_API_URL}/carts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

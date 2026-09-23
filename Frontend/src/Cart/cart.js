@@ -33,7 +33,7 @@ function isPromoExpired(expiryDateString) {
 // Load promo codes from backend
 async function loadPromoCodesFromBackend() {
   try {
-    const response = await fetch("${import.meta.env.VITE_API_URL}/promoCodes");
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/promoCodes`);
     const codes = await response.json();
 
     // Convert array to object with code as key
@@ -122,7 +122,7 @@ async function loadCartFromBackend() {
   if (!user) return;
 
   try {
-    const response = await fetch("${import.meta.env.VITE_API_URL}/carts");
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/carts`);
     const carts = await response.json();
     const userCart = carts.find((c) => c.userId === user.id);
 
@@ -285,7 +285,7 @@ async function saveCartToBackend() {
   if (!user) return;
 
   try {
-    const cartsResponse = await fetch("${import.meta.env.VITE_API_URL}/carts");
+    const cartsResponse = await fetch(`${import.meta.env.VITE_API_URL}/carts`);
     const carts = await cartsResponse.json();
     const userCart = carts.find((c) => c.userId === user.id);
 
@@ -302,7 +302,7 @@ async function saveCartToBackend() {
         }),
       });
     } else {
-      await fetch("${import.meta.env.VITE_API_URL}/carts", {
+      await fetch(`${import.meta.env.VITE_API_URL}/carts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -405,7 +405,7 @@ if (checkoutBtn) {
     // Delete from backend
     const user = getUserFromLocalStorage();
     if (user) {
-      fetch("${import.meta.env.VITE_API_URL}/carts")
+      fetch(`${import.meta.env.VITE_API_URL}/carts`)
         .then((res) => res.json())
         .then((carts) => {
           const userCart = carts.find((c) => c.userId === user.id);
