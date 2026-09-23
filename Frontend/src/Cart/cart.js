@@ -516,3 +516,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 console.log("Cart page loaded successfully!");
+window.updateQuantity = updateQuantity;
+window.updateQuantityDirect = updateQuantityDirect;
+window.removeItem = removeItem;
+window.selectPromoCode = selectPromoCode;
